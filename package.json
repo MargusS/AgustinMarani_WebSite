@@ -1,0 +1,31 @@
+{
+  "name": "agustinmaraniwebsite",
+  "version": "1.0.0",
+  "description": "My portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MargusS/AgustinMarani_WebSite.git"
+  },
+  "keywords": [
+    "portfolio",
+    "programmer",
+    "web",
+    "design",
+    "develop",
+    "agustin",
+    "marani",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Agustin Marani Ghiacci",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MargusS/AgustinMarani_WebSite/issues"
+  },
+  "homepage": "https://github.com/MargusS/AgustinMarani_WebSite#readme"
+}
