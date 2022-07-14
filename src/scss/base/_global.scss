@@ -13,9 +13,11 @@ html {
 }
 
 body {
-    //font-family: $fuente_principal;
+    //font-family: $font_main;
     font-size: 1.6rem;
     line-height: 1.8;
+    background-color: var.$black;
+    margin: 0;
 }
 
 p {
@@ -23,21 +25,25 @@ p {
     font-size: 1.2rem;
 }
 
-.contenedor {
-    width: 95%;
-    max-width: 120rem;
+.container {
+    width: 100%;
+    max-width: 140rem;
     margin: 0 auto;
+    display: flex;
 }
 
 a {
+    font-family: var.$font_main;
+    font-weight: 700;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 
 h1,
 h2,
 h3 {
-    font-family: var.$fuente_principal;
+    font-family: var.$font_main;
     margin: 10em;
     color: black;
     margin: 0;
@@ -61,6 +67,7 @@ h3 {
 
 h4 {
     font-size: 2rem;
+    margin: 0;
 }
 
 .bg-img {

@@ -1,0 +1,85 @@
+@use '../base/variables' as var;
+@use '../base/mixins' as mix;
+
+header {
+    width: 100vw;
+    position: fixed;
+    overflow: hidden;
+    // background-color: var.$dark;
+}
+
+header .container {
+    padding: 2.5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include mix.desktop {
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+.navbar-logo {
+    animation: navbar-logo 2s cubic-bezier(.5, .6, .6, 1);
+    animation-fill-mode: backwards;
+
+    h4 {
+        font-family: var.$font_logo;
+        font-size: 6rem;
+        color: var.$ligth-dark;
+
+        span {
+            color: var.$light-blue;
+        }
+    }
+}
+
+@keyframes navbar-logo {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.navbar-menu {
+    animation: navbar-menu 2s cubic-bezier(1, .6, .6, .5);
+    animation-fill-mode: backwards;
+    animation-delay: 1s;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    a {
+        color: var.$white;
+        padding: 0rem 2rem;
+        font-size: 1.7rem;
+    }
+
+    @include mix.desktop {
+        flex-direction: row;
+
+        a {
+            margin: 0 1rem;
+        }
+
+        a:hover {
+            animation: forwards .5s;
+            box-shadow: 0rem .4rem .3rem -.3rem var.$light-blue;
+        }
+    }
+}
+
+@keyframes navbar-menu {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
