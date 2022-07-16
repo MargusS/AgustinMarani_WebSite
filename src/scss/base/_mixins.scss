@@ -3,20 +3,20 @@
 
 
 /** Media Queries **/
-@mixin phone {
-    @media (min-width: #{var.$phone}) {
+// @mixin phone {
+//     @media (min-width: #{var.$phone}) {
+//         @content;
+//     }
+// }
+
+@mixin medium {
+    @media (min-width: #{var.$medium}) {
         @content;
     }
 }
 
-@mixin tablet {
-    @media (min-width: #{var.$tablet}) {
-        @content;
-    }
-}
-
-@mixin desktop {
-    @media (min-width: #{var.$desktop}) {
+@mixin large {
+    @media (min-width: #{var.$large}) {
         @content;
     }
 }

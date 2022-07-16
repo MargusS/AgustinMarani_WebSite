@@ -16,7 +16,7 @@ body {
     //font-family: $font_main;
     font-size: 1.6rem;
     line-height: 1.8;
-    background-color: var.$black;
+    background-color: var.$dark-blue;
     margin: 0;
 }
 
@@ -33,7 +33,7 @@ p {
 }
 
 a {
-    font-family: var.$font_main;
+    font-family: var.$font_logo;
     font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
@@ -78,7 +78,7 @@ h4 {
 .item-unvisible {
     visibility: hidden;
 
-    @include mix.desktop {
+    @include mix.large {
         visibility: visible;
     }
 }

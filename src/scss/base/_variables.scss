@@ -5,18 +5,35 @@ $font_logo: 'Bebas Neue', cursive;
 $font_main: 'Lato', sans-serif;
 
 // Tamaño de Media Queries
-$phone: 480px;
-$tablet: 769px;
-$desktop: 1025px;
+$medium: 640px;
+$large: 1007px;
 
 // Colores
-$black: #000000e0;
+$black: #000000;
+$white: #FFF0D3;
+$dark-blue: #002222;
+$blue: #005555;
+$light-red: #7f1a35;
+$red: #4A0001;
+$dark-red: #2D0000;
+/*
+$black: #000000;
 $white: #FFFFFF;
 $dark: #010f30;
-$ligth-dark: #2B4F8D;
+$light-dark: #2B4F8D;
 $pink: #FE00EC;
 $blue: #049CE4;
 $light-blue: #02C9AF;
+
+$dark: #71e26;
+$light-dark: #06394c;
+$blue: #0c4383;
+$light-blue: #22a0b6;
+$granate: #6a97b8;
+$granate: #7b1346;
+$pink: #cb0c59;
+$light-pink: #eb649f;
+*/
 
 // $separacion: 5rem;
 
