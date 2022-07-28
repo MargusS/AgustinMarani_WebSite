@@ -5,9 +5,16 @@ const personal_img = document.querySelector(".personal-img");
 const links = document.querySelectorAll(".navbar-menu a");
 const section = document.querySelectorAll('section');
 
+
+//Implementar onWheel event
+
+
 document.addEventListener('DOMContentLoaded', function () {
     scrollSpy();
     smoothScroll();
+    window.onbeforeunload = () => {
+        window.scrollTo(0, 0);
+    }
 })
 
 function scrollSpy() {

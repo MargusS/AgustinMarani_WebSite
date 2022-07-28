@@ -12,11 +12,16 @@ html {
     box-sizing: inherit;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     //font-family: $font_main;
     font-size: 1.6rem;
     line-height: 1.8;
-    background-color: var.$dark-blue;
+    background: var.$dark-blue;
+    // background: radial-gradient(circle, rgba(var.$white, .8) 20%, rgba(var.$blue, 1) 40%, rgba(var.$dark-blue, 1) 100%);
     margin: 0;
 }
 
@@ -26,10 +31,17 @@ p {
 }
 
 .container {
+    position: relative;
     width: 100%;
-    max-width: 140rem;
+    max-width: 160rem;
     margin: 0 auto;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // padding: 0 2rem;
+
+    // max-width: 100%;
 }
 
 a {
@@ -42,13 +54,13 @@ a {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     font-family: var.$font_main;
     margin: 10em;
     color: black;
     margin: 0;
     font-weight: 500;
-    text-align: center;
 
 }
 

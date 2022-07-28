@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./build/css/app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -14,8 +15,15 @@
         <div class="container">
             <div class="navbar-logo">
                 <a href="/">
-                    <h4>agustin<span>marani</span></h4>
+                    <h1>agustin<span>marani</span></h1>
+                    <h2>Software<span>developer</span></h2>
                 </a>
+            </div>
+            <input class="checkbox" type="checkbox" name="" id="" />
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
             </div>
             <div class="navbar-menu">
                 <a class="active" href="#home">inicio</a>
@@ -31,13 +39,74 @@
             <div class="personal-img"></div>
         </section>
         <section id="about">
-            <div class="about">
-                <h3>about</h3>
+            <div class="container">
+                <div class="about-graph"></div>
+                <div class="about-text">
+                    <div class="bg-blur">
+                        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam tenetur fugiat quae ad illum
+                            autem
+                            vero quam deleniti id delectus! Id quia distinctio iste maiores cupiditate ad voluptas,
+                            architecto ipsam.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente fuga modi aliquam
+                            voluptates
+                            natus fugit rerum molestias id, dolor ullam omnis voluptas, obcaecati odit sequi, dolorem
+                            soluta
+                            explicabo quos quibusdam?
+                        </h4>
+                        <br>
+                        <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt tenetur, reiciendis
+                            praesentium,
+                            nam dolor aliquid nesciunt corrupti consequuntur molestias consectetur cum hic, voluptatibus
+                            rem
+                            molestiae libero! Corporis necessitatibus eos adipisci.
+                        </h4>
+                    </div>
+                </div>
+
             </div>
         </section>
         <section id="work">
             <div class="work">
-                <h3>work</h3>
+                <div class="container">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">Slide 1</div>
+                            <div class="swiper-slide">Slide 2</div>
+                            <div class="swiper-slide">Slide 3</div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="about-text">
+                        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam tenetur fugiat quae ad illum
+                            autem
+                            vero quam deleniti id delectus! Id quia distinctio iste maiores cupiditate ad voluptas,
+                            architecto ipsam.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente fuga modi aliquam
+                            voluptates
+                            natus fugit rerum molestias id, dolor ullam omnis voluptas, obcaecati odit sequi, dolorem
+                            soluta
+                            explicabo quos quibusdam?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quisquam accusantium at qui
+                            eum
+                            aperiam? Similique quo porro nihil deleniti, quas nesciunt cum nostrum consequuntur esse
+                            sunt,
+                            fugit tempore itaque.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam tenetur fugiat quae ad illum
+                            autem
+                        </h4>
+                        <br>
+                        <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt tenetur, reiciendis
+                            praesentium,
+                            nam dolor aliquid nesciunt corrupti consequuntur molestias consectetur cum hic, voluptatibus
+                            rem
+                            molestiae libero! Corporis necessitatibus eos adipisci.
+                            Delectus minus deleniti ipsa nostrum quia quidem error, hic officiis ipsum autem, amet
+                            reiciendis. Velit voluptatum quisquam, dolor odit saepe natus est laudantium accusamus magni
+                            unde distinctio praesentium eaque laborum.</h4>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="skills">
@@ -53,6 +122,9 @@
     </main>
 
     <script src="./src/js/headerScroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./src/js/swiperInitialize.js"></script>
+
 </body>
 
 </html>
