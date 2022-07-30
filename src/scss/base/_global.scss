@@ -39,9 +39,12 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    // padding: 0 2rem;
 
-    // max-width: 100%;
+    @include mix.large {
+        margin-top: 0;
+        flex-direction: row;
+        align-items: center;
+    }
 }
 
 a {

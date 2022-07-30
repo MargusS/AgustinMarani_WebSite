@@ -24,7 +24,7 @@ header .container {
 
     h1 {
         font-family: var.$font_logo;
-        font-size: 5rem;
+        font-size: 6rem;
         color: var.$light-red;
         transition: cubic-bezier(.8, 1, .8, 1) 1s;
 
@@ -34,11 +34,11 @@ header .container {
     }
 
     h2 {
-        padding-left: 1.25rem;
-        margin-top: -4rem;
+        padding-left: 1.3rem;
+        margin-top: -4.7rem;
         text-align: center;
         font-family: var.$font_logo;
-        font-size: 2.5rem;
+        font-size: 3rem;
         color: var.$light-red;
         transition: cubic-bezier(.8, 1, .8, 1) 1s;
 
@@ -118,7 +118,7 @@ header .container {
     display: block;
     height: 4px;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 1rem;
     background: #dfe1e2;
 
     @include mix.large {
@@ -141,15 +141,6 @@ header .container {
 }
 
 .navbar-menu {
-    // animation-fill-mode: backwards;
-    // animation-delay: 1s;
-
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // font-size: 3rem !important;
-    // display: none;
-
     a {
         color: var.$white;
         padding: 0rem 2rem;
@@ -157,12 +148,14 @@ header .container {
     }
 
     display: none;
-    padding-top: 120px;
+    padding-top: 9rem;
     background-color: var.$dark-blue;
     height: 100vh;
     width: 100%;
     margin-top: 1rem;
-    // animation: navbar-menu 2s cubic-bezier(1, .6, .6, .5);
+    flex-direction: column;
+    text-align: center;
+
 
     @include mix.large {
         padding: 0;
@@ -206,24 +199,22 @@ header .container {
     }
 }
 
-input[type="checkbox"]:checked~.navbar-menu {
+.visibleMenu {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    animation: navbar-menu-hide 2s cubic-bezier(1, .6, .6, .5);
 }
 
-input[type="checkbox"]:checked~.hamburger-lines .line1 {
-    transform: rotate(45deg);
-}
+.lineAnimation {
+    .line1 {
+        transform: rotate(45deg);
+    }
 
+    .line2 {
+        transform: scaleY(0);
+    }
 
-input[type="checkbox"]:checked~.hamburger-lines .line2 {
-    transform: scaleY(0);
-}
-
-input[type="checkbox"]:checked~.hamburger-lines .line3 {
-    transform: rotate(-45deg);
+    .line3 {
+        transform: rotate(-45deg);
+    }
 }
 
 .move-header {

@@ -1,29 +1,28 @@
 @use '../base/variables' as var;
 @use '../base/mixins' as mix;
 
-.work {
-    width: 100%;
-    height: 100vh;
+#work {
     background-color: var.$white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+}
 
-    h3 {
-        font-size: 20rem;
-        color: black;
-    }
+#work .container {
+    margin-top: 8.5rem;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .swiper {
     width: 100%;
-    height: 100%;
+    height: 60%;
+
+    @include mix.large {
+        width: 50%;
+    }
 }
 
 .swiper-slide {
     text-align: center;
-    font-size: 18px;
+    font-size: 1.8rem;
     background: #fff;
 
     /* Center slide text vertically */
