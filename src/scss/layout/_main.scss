@@ -1,6 +1,9 @@
 @use '../base/variables' as var;
 @use '../base/mixins' as mix;
 
+#home {
+    min-height: 100vh;
+}
 
 .personal-img {
     z-index: 100;
@@ -33,37 +36,35 @@
     }
 }
 
+// .skills {
+//     width: 100%;
+//     height: 100vh;
+//     background-color: var.$white;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
 
+//     h3 {
+//         font-size: 20rem;
+//         color: black;
+//     }
+// }
 
-.skills {
-    width: 100%;
-    height: 100vh;
-    background-color: var.$white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+// .contact {
+//     width: 100%;
+//     height: 100vh;
+//     // background-color: var.$dark-blue;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
 
-    h3 {
-        font-size: 20rem;
-        color: black;
-    }
-}
-
-.contact {
-    width: 100%;
-    height: 100vh;
-    // background-color: var.$dark-blue;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    h3 {
-        font-size: 20rem;
-        color: black;
-    }
-}
+//     h3 {
+//         font-size: 20rem;
+//         color: black;
+//     }
+// }
 
 
 .move-img {

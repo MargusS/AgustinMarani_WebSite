@@ -25,6 +25,10 @@
         flex-direction: column;
         row-gap: 5rem;
         margin-top: -4rem;
+
+        h4 {
+            margin-bottom: 3rem;
+        }
     }
 }
 
@@ -45,20 +49,21 @@
 }
 
 .col {
-    // width: 40%;
     display: flex;
     justify-content: center;
     column-gap: 5rem;
     height: auto;
 
     img {
-        width: 7.5vw;
-        height: auto;
+        width: auto;
+        height: 4vh;
+        max-height: 4rem;
     }
 
     @include mix.large {
         img {
-            width: 6rem;
+            height: 6vh;
+            max-height: 10rem;
         }
     }
 }
