@@ -6,10 +6,12 @@ const links = document.querySelectorAll(".navbar-menu a");
 const section = document.querySelectorAll('section');
 const hamburger = document.querySelector('.hamburger-lines');
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
     scrollSpy();
     smoothScroll();
     hiddeMenu();
+    addWork();
+    workInfo(0);
     window.onbeforeunload = () => {
         window.scrollTo(0, 0);
     }

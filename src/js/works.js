@@ -1,14 +1,14 @@
 const works = [
     {
-        id: 1,
+        id: 0,
         title: "Sabios Guías Intérpretes",
-        description: "",
-        image: "../../../src/img/SabiosGuias.JPG"
+        description: "Trabajo Sabiso Guias Intérpretes",
+        image: "src/img/SabiosGuias.JPG"
     },
     {
-        id: 2,
+        id: 1,
         title: "La Isleta VR",
-        description: "",
-        image: "../../../src/img/LaIsleta.JPG"
+        description: "Trabajo Vive La Isleta",
+        image: "src/img/LaIsleta.JPG"
     }
 ]

@@ -58,6 +58,10 @@ section {
     align-items: center;
     justify-content: center;
 
+    @include mix.medium {
+        row-gap: 1em;
+    }
+
     @include mix.large {
         flex-direction: row;
         align-items: center;
@@ -159,7 +163,7 @@ h4 {
     }
 
     @include mix.large {
-        width: 90%;
+        width: 80%;
         height: auto;
         margin: .5rem 1.5rem;
         margin-right: 3rem;
