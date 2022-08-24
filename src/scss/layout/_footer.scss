@@ -1,0 +1,13 @@
+@use '../base/variables' as var;
+@use '../base/mixins' as mix;
+
+footer {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    text-align: center;
+
+    p {
+        color: var.$white;
+    }
+}

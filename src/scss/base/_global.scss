@@ -81,6 +81,11 @@ p {
     margin: 0;
 }
 
+label {
+    font-family: var.$font_main;
+    color: var.$white;
+}
+
 h1,
 h2,
 h3,
@@ -142,10 +147,6 @@ h4 {
 
 .item-unvisible {
     visibility: hidden;
-
-    @include mix.large {
-        visibility: visible;
-    }
 }
 
 .item-visible {

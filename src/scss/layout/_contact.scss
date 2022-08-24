@@ -1,0 +1,138 @@
+@use '../base/variables' as var;
+@use '../base/mixins' as mix;
+
+#contact {
+    height: 130vh;
+    max-height: 95rem;
+
+    @include mix.large {
+        min-height: 100vh;
+    }
+}
+
+#contact .container {
+    height: 130vh;
+    width: 100%;
+    row-gap: 2.5rem;
+
+    @include mix.large {
+        height: fit-content;
+        width: 90%;
+        column-gap: 5rem;
+    }
+}
+
+.map {
+    width: 100%;
+    height: 30%;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    @include mix.large {
+        position: relative;
+        width: 50%;
+        height: 65%;
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: 1rem;
+    height: 70%;
+
+    @include mix.large {
+        justify-content: center;
+    }
+}
+
+.group {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+        margin-bottom: 1rem;
+        color: var.$white;
+    }
+
+    input,
+    textarea {
+        font-family: var.$font_main;
+        font-size: 1.6rem;
+        color: var.$white;
+        background-color: transparent;
+        // background: rgb(0, 85, 85);
+        // background: linear-gradient(0deg, rgba(0, 85, 85, 1) 0%, rgba(0, 34, 34, 1) 100%);
+        width: 100%;
+        height: 4rem;
+        padding: .5rem;
+        // margin: .5rem 0;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid var.$white;
+    }
+
+    textarea {
+        border: 1px solid var.$white;
+        padding: 1rem .5rem;
+        margin-top: .7rem;
+        resize: none;
+        height: 15vh;
+        border-radius: .5rem;
+    }
+
+    @include mix.large {
+        width: 35vw;
+
+        input,
+        textarea {
+            width: 100%;
+        }
+    }
+}
+
+.error-text {
+    min-height: 3rem;
+    width: 100%;
+    opacity: 0;
+    margin-top: .5rem;
+    color: var.$blue;
+    transition: opacity .4s cubic-bezier(0, .1, .1, .5);
+
+    @include mix.large {
+        width: 75%;
+    }
+}
+
+.btn-form {
+    margin: 0;
+    width: 100%;
+    height: 5rem;
+    color: var.$dark-blue;
+    font-family: var.$font_main;
+    font-size: 1.5rem;
+    background-color: var.$white;
+    cursor: pointer;
+    transition: 0.5s;
+    border: none;
+    // box-shadow:
+    //     0.3em 0.3em 0 0 var.$white,
+    //     inset 0.3em 0.3em 0 0 var.$white;
+
+    &:hover {
+        border-radius: 10rem;
+        background-color: var.$blue;
+        // box-shadow:
+        //     0 0 0 0 var.$white,
+        //     inset 6em 3.5em 0 0 var.$white;
+        // box-shadow: inset 0 0 0 2em var.$blue;
+        color: var.$white;
+        // font-weight: bold;
+    }
+}

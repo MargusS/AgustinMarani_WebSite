@@ -1,14 +1,16 @@
 const works = [
     {
         id: 0,
-        title: "Sabios Guías Intérpretes",
-        description: "Trabajo Sabiso Guias Intérpretes",
-        image: "src/img/SabiosGuias.JPG"
+        title: "Sabios Guías",
+        description: "Trabajo Sabiso Guias Intérpretes Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam tenetur fugiat quae ad illum Ipsam tenetur fugiat quae ad illumIpsam tenetur fugiat quae ad illumIpsam tenetur fugiat quae ad illum ",
+        image: "src/img/SabiosGuias.JPG",
+        git: "https://github.com/MargusS/SabiosGuias_React"
     },
     {
         id: 1,
         title: "La Isleta VR",
-        description: "Trabajo Vive La Isleta",
-        image: "src/img/LaIsleta.JPG"
+        description: "Trabajo Vive La Isleta Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur",
+        image: "src/img/LaIsleta.JPG",
+        git: "https://github.com/MargusS/ProyectoViveLaIsleta"
     }
 ]

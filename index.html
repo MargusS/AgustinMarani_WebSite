@@ -108,7 +108,7 @@
                     <p class="work-desc"></p>
                 </div>
                 <div class="github">
-                    <a href="https://github.com/MargusS" target="_blank">
+                    <a href="" target="_blank">
                         <img src="./src/img/icons/github.png" alt="GitHub">
                     </a>
                 </div>
@@ -116,15 +116,38 @@
                     <div class="swiper-wrapper">
                     </div>
                 </div>
-
             </div>
         </section>
         <section id="contact">
-            <div class="contact">
-                <h3>contact</h3>
+            <div class="container">
+                <div class="map">
+                    <img src="/src/img/google-maps-marker.png" alt="">
+                </div>
+                <form class="form" action="/send-email" method="POST">
+                    <div class="group group-name">
+                        <h3>Contáctame</h3>
+                        <label>Nombre</label>
+                        <input id="name" type="text" required>
+                        <p class="error-text"></p>
+                    </div>
+                    <div class="group group-email">
+                        <label>Email</label>
+                        <input id="email" type="email" required>
+                        <p class="error-text"></p>
+                    </div>
+                    <div class="group group-message">
+                        <label>Mensaje</label>
+                        <textarea id="message" maxlength="350"></textarea>
+                        <p class="error-text"></p>
+                    </div>
+                    <button class="btn-form">Enviar</button>
+                </form>
             </div>
         </section>
     </main>
+    <!-- <footer>
+        <p>Agustin Marani &#169</p>
+    </footer> -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./src/js/swiperInitialize.js"></script>
     <script src="./src/js/works.js"></script>
@@ -132,6 +155,7 @@
     <script src="./src/js/burgerMenu.js"></script>
     <script src="./src/js/workInfo.js"></script>
     <script src="./src/js/initialize.js"></script>
+    <script src="./src/js/formValidation.js"></script>
 </body>
 
 </html>

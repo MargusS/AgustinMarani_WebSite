@@ -1,6 +1,12 @@
 @use '../base/variables' as var;
 @use '../base/mixins' as mix;
 
+#work .text {
+    p {
+        height: 20rem;
+    }
+}
+
 .swiper {
     width: 85%;
     height: 30vh;

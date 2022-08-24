@@ -5,6 +5,7 @@ const gitLink = document.querySelector(".github a");
 const workInfo = (index) => {
     workTitle.textContent = `${works[index].title}`;
     workDesc.textContent = `${works[index].description}`;
+    gitLink.href = `${works[index].git}`
 }
 
 swiper.on("slideChange", (e) => {
