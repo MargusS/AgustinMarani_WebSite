@@ -43,6 +43,7 @@
     row-gap: 2.5rem;
 
     @include mix.large {
+        row-gap: 5rem;
         width: 100%;
     }
 
@@ -55,15 +56,15 @@
     height: auto;
 
     img {
-        width: 100%;
-        height: 4vh;
+        width: auto;
+        height: auto;
         max-height: 4rem;
     }
 
     @include mix.large {
         img {
-            height: 6vh;
-            max-height: 10rem;
+            height: auto;
+            max-height: 6rem;
         }
     }
 }

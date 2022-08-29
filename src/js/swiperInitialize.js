@@ -1,4 +1,4 @@
-let swiper = new Swiper(".mySwiper", {
+const swiper = new Swiper(".mySwiper", {
     effect: "cards",
     cardsEffect: {
         slideShadows: false
@@ -15,6 +15,6 @@ let swiper = new Swiper(".mySwiper", {
 
 const addWork = () => {
     for (let work of works) {
-        swiper.appendSlide(`<div class="swiper-slide" id=${work.id}><img src=${work.image} alt="Slide image"></div>`);
+        swiper.appendSlide(`<div class="swiper-slide" id=${work.id}><img src=${work.image} alt="Slide image" loading="lazy" width="400" height="400"></div>`);
     }
 }

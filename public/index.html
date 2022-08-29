@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./build/css/app.css">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" as="font">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" as="font">
+    <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 </head>
 
@@ -14,7 +16,7 @@
     <header>
         <div class="container">
             <div class="navbar-logo">
-                <a href="/">
+                <a href="index.html">
                     <h1>agustin<span>marani</span></h1>
                     <h2>Software<span>developer</span></h2>
                 </a>
@@ -40,7 +42,7 @@
         <section id="about">
             <div class="container">
                 <div class="about-graph">
-                    <img src="./src/img/about2.png" alt="Graph">
+                    <img src="img/icons/about2.webp" alt="Graph" loading="lazy" width="400" height="400">
                 </div>
                 <div class="text">
                     <h3>Title</h3>
@@ -58,10 +60,10 @@
                 </div>
                 <div class="personal-links social">
                     <a href="https://www.instagram.com/agusmaranii/?hl=es" target="_blank">
-                        <img src="./src/img/icons/instagram.png" alt="Instagram">
+                        <img src="img/icons/instagram.webp" alt="Instagram" loading="lazy" width="400" height="400">
                     </a>
                     <a href="https://twitter.com/AgusMaraniii" target="_blank">
-                        <img src="./src/img/icons/gorjeo.png" alt="Twitter">
+                        <img src="img/icons/gorjeo.webp" alt="Twitter" loading="lazy" width="400" height="400">
                     </a>
                 </div>
             </div>
@@ -82,20 +84,19 @@
                     <h4>tecnologías y kit de desarrollo</h4>
                     <div class="tools">
                         <div class="col">
-                            <img src="./src/img/icons/html-5.png" alt="HTML5">
-                            <img src="./src/img/icons/css-3.png" alt="CSS">
-                            <img src="./src/img/icons/sass.png" alt="">
-                            <img src="./src/img/icons/js.png" alt="JavaScrip">
+                            <img src="img/icons/html-5.webp" alt="HTML5" loading="lazy" width="400" height="400">
+                            <img src="img/icons/css-3.webp" alt="CSS" loading="lazy" width="400" height="400">
+                            <img src="img/icons/sass.webp" alt="SASS" loading="lazy" width="400" height="400">
                         </div>
                         <div class="col">
-                            <img src="./src/img/icons/bootstrap.png" alt="">
-                            <img src="./src/img/icons/physics.png" alt="">
-                            <img src="./src/img/icons/aframe-logo.png" alt="">
+                            <img src="img/icons/js.webp" alt="JavaScrip" loading="lazy" width="400" height="400">
+                            <img src="img/icons/bootstrap.webp" alt="Bootstrap" loading="lazy" width="400" height="400">
+                            <img src="img/icons/physics.webp" alt="React" loading="lazy" width="400" height="400">
                         </div>
                         <div class="col">
-                            <img src="./src/img/icons/php.png" alt="">
-                            <img src="./src/img/icons/java.png" alt="">
-                            <img src="./src/img/icons/npm.png" alt="">
+                            <img src="img/icons/aframe.webp" alt="A-Frame" loading="lazy" width="400" height="400">
+                            <img src="img/icons/node.webp" alt="NODE JS" loading="lazy" width="400" height="400">
+                            <img src="img/icons/npm.webp" alt="NPM" loading="lazy" width="400" height="400">
                         </div>
                     </div>
                 </div>
@@ -109,7 +110,7 @@
                 </div>
                 <div class="github">
                     <a href="" target="_blank">
-                        <img src="./src/img/icons/github.png" alt="GitHub">
+                        <img src="img/icons/github.webp" alt="GitHub" loading="lazy" width="400" height="400">
                     </a>
                 </div>
                 <div class="swiper mySwiper">
@@ -120,23 +121,23 @@
         </section>
         <section id="contact">
             <div class="container">
-                <div class="map">
-                    <img src="/src/img/google-maps-marker.png" alt="">
+                <div id="map" class="map">
+                    <!-- <img src="img/google-maps-marker.png" alt=""> -->
                 </div>
                 <form class="form" action="/send-email" method="POST">
                     <div class="group group-name">
                         <h3>Contáctame</h3>
-                        <label>Nombre</label>
+                        <label for="name">Nombre</label>
                         <input id="name" type="text" required>
                         <p class="error-text"></p>
                     </div>
                     <div class="group group-email">
-                        <label>Email</label>
+                        <label for="email">Email</label>
                         <input id="email" type="email" required>
                         <p class="error-text"></p>
                     </div>
                     <div class="group group-message">
-                        <label>Mensaje</label>
+                        <label for="message">Mensaje</label>
                         <textarea id="message" maxlength="350"></textarea>
                         <p class="error-text"></p>
                     </div>
@@ -149,13 +150,9 @@
         <p>Agustin Marani &#169</p>
     </footer> -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./src/js/swiperInitialize.js"></script>
-    <script src="./src/js/works.js"></script>
-    <script src="./src/js/headerScroll.js"></script>
-    <script src="./src/js/burgerMenu.js"></script>
-    <script src="./src/js/workInfo.js"></script>
-    <script src="./src/js/initialize.js"></script>
-    <script src="./src/js/formValidation.js"></script>
+    <script src="js/bundle.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPFDBvRtiAYBYlJwoV9Q-dRi8-8ZfYMAs&callback=initMap">
+    </script>
 </body>
 
 </html>

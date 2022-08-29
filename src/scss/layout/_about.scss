@@ -26,6 +26,11 @@
     top: 95%;
     column-gap: 3rem;
 
+    img {
+        width: 100%;
+        height: auto;
+    }
+
     @include mix.large {
         top: 70%;
         column-gap: 5rem;
