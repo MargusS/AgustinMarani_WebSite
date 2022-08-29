@@ -7,8 +7,12 @@
 
 .personal-img {
     z-index: -1;
+    width: 100%;
+    height: 100%;
     position: fixed;
-    bottom: -1.5%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 
     img {
         width: 100%;
@@ -19,19 +23,12 @@
     animation-fill-mode: backwards;
 
     @include mix.medium {
-        left: 10%;
-
         img {
-            width: 90%;
+            width: 80%;
         }
     }
 
     @include mix.large {
-        left: 0;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-
         img {
             width: 60rem;
         }
