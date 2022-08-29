@@ -6,21 +6,35 @@
 }
 
 .personal-img {
-    z-index: 100;
+    z-index: -1;
     position: fixed;
-    top: 55%;
-    left: 7%;
-    right: 0;
-    bottom: 0;
-    background-image: url(../img/oppp.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
+    bottom: -1.5%;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
     animation: personal-img 1.2s cubic-bezier(.5, .6, .6, 1);
     animation-fill-mode: backwards;
 
-    @include mix.large {
-        top: 17%;
+    @include mix.medium {
         left: 10%;
+
+        img {
+            width: 90%;
+        }
+    }
+
+    @include mix.large {
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 60rem;
+        }
     }
 }
 

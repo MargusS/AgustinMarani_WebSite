@@ -15,6 +15,6 @@ const swiper = new Swiper(".mySwiper", {
 
 const addWork = () => {
     for (let work of works) {
-        swiper.appendSlide(`<div class="swiper-slide" id=${work.id}><img src=${work.image} alt="Slide image" loading="lazy" width="400" height="400"></div>`);
+        swiper.appendSlide(`<div class="swiper-slide" id=${work.id}><img src=${work.image} alt="Slide image" loading="lazy"></div>`);
     }
 }
