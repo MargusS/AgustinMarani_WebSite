@@ -38,7 +38,6 @@ section {
     flex-direction: column;
     justify-content: center;
     width: 100vw;
-    min-height: 110vh;
     overflow: hidden;
 
     @include mix.large {
@@ -53,6 +52,12 @@ section {
             min-height: 90%;
         }
     }
+}
+
+#about,
+#skills,
+#work {
+    min-height: 110vh;
 }
 
 .container {
