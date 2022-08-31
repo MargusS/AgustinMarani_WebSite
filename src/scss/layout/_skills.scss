@@ -3,7 +3,6 @@
 
 
 #skills .container {
-    margin: 5rem 0;
     h3 {
         color: var.$white;
         text-align: center;
@@ -19,9 +18,13 @@
         color: var.$white;
     }
 
+    @include mix.medium {
+        height: 100vh;
+    }
+
     @include mix.large {
         flex-direction: column;
-        row-gap: 5rem;
+        row-gap: 2.5rem;
         margin-top: -4rem;
 
         h4 {
@@ -57,10 +60,17 @@
         max-height: 4rem;
     }
 
-    @include mix.large {
+    @include mix.medium {
         img {
             height: auto;
             max-height: 6rem;
+        }
+    }
+
+    @include mix.large {
+        img {
+            height: auto;
+            max-height: 5rem;
         }
     }
 }

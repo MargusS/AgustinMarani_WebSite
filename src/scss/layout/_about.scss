@@ -10,7 +10,7 @@
 
     img {
         width: auto;
-        height: 70%;
+        height: 60%;
     }
 
     @include mix.large {
@@ -30,13 +30,13 @@
     top: 95%;
     column-gap: 3rem;
 
-    img {
-        width: 100%;
-        height: auto;
+    @include mix.medium {
+        top: 100%;
+        column-gap: 5rem;
     }
 
     @include mix.large {
-        top: 70%;
+        top: 95%;
         column-gap: 5rem;
     }
 }
