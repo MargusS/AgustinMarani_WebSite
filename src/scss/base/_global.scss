@@ -100,7 +100,8 @@ label {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
     font-family: var.$font_main;
     margin: 10em;
     color: black;
@@ -125,6 +126,11 @@ h3 {
 h4 {
     font-size: 1.8rem;
     margin: 0;
+}
+
+h5 {
+    color: var.$blue;
+    font-size: 1.4rem;
 }
 
 img {

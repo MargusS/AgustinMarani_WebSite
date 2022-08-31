@@ -14,11 +14,11 @@
     height: auto;
 
     .content {
-        height: 20rem;
+        max-height: 20rem;
         overflow: hidden;
         border-bottom: 2px solid var.$blue;
         padding: 1.5rem;
-        transition: height .5s ease-in-out;
+        transition: max-height .7s cubic-bezier(0.88, 0, 0.175, 1);
     }
 
     @include mix.large {
@@ -80,7 +80,7 @@
 }
 
 .open {
-    height: 45rem !important;
+    max-height: 100rem !important;
 }
 
 .social {
