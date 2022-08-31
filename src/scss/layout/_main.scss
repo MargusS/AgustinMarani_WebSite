@@ -1,10 +1,6 @@
 @use '../base/variables' as var;
 @use '../base/mixins' as mix;
 
-#home {
-    height: 100vh;
-}
-
 .personal-img {
     z-index: -1;
     width: 100%;
