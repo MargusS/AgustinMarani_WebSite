@@ -1,23 +1,56 @@
 @use '../base/variables' as var;
 @use '../base/mixins' as mix;
 
+#about .container {
+    row-gap: 2rem;
+
+    @include mix.large {
+        height: 100vh;
+        align-items: center;
+    }
+}
+
+#about .text {
+    height: auto;
+
+    .content {
+        height: 20rem;
+        overflow: hidden;
+        border-bottom: 2px solid var.$blue;
+        padding: 1.5rem;
+        transition: height .5s ease-in-out;
+    }
+
+    @include mix.large {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 70%;
+        margin: 5rem 0;
+
+        .content {
+            height: auto;
+        }
+    }
+}
+
 .about-graph {
     display: flex;
     width: 100%;
-    height: 35vh;
+    height: 30vh;
     justify-content: center;
     margin-bottom: -5rem;
 
     img {
         width: auto;
-        height: 60%;
+        height: 80%;
     }
 
     @include mix.large {
         align-items: center;
         width: 80vw;
         height: 50vh;
-        margin: 0 1rem;
+        margin: 1rem;
 
         img {
             width: auto;
@@ -26,8 +59,32 @@
     }
 }
 
+.collapse {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem;
+
+    .btn-collapse {
+        margin: 0;
+        width: 50%;
+        height: 3.5rem;
+        color: var.$white;
+        font-family: var.$font_main;
+        font-size: 1.5rem;
+        background-color: var.$blue;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+        border: none;
+        border-radius: .5rem;
+    }
+}
+
+.open {
+    height: 45rem !important;
+}
+
 .social {
-    top: 95%;
+    // top: 105%;
     column-gap: 3rem;
 
     @include mix.medium {
@@ -36,7 +93,8 @@
     }
 
     @include mix.large {
-        top: 95%;
+        top: 65%;
+        left: 20%;
         column-gap: 5rem;
     }
 }

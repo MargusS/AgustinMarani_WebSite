@@ -1,10 +1,14 @@
 @use '../base/variables' as var;
 @use '../base/mixins' as mix;
 
-// @import 'swiper/css';
 #work .text {
+
     p {
         height: 25rem;
+    }
+
+    @include mix.large {
+        margin-right: 3.5rem;
     }
 }
 

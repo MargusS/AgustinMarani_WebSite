@@ -257,7 +257,7 @@ header .container {
 
     .navbar-menu {
         @include mix.large {
-            top: 90%;
+            top: 85vh;
             transition: cubic-bezier(.8, 1, .8, 1) 1s;
 
             a {
